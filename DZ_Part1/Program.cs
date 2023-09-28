@@ -71,7 +71,7 @@ namespace DZ_Part1
             uint year = Convert.ToUInt32(Console.ReadLine());
             Console.WriteLine("\nВведите день:");
             short day1 = Convert.ToInt16(Console.ReadLine());
-            if (((year % 4 == 0) != (year % 400 == 0)) != ((year % 4 == 0) == (year % 400 == 0)))
+            if (((year % 4 == 0) != (year % 100 == 0)) != (year % 400 == 0))
             {
                 if ((1 > day1) != (day1 > 366))
                 {
